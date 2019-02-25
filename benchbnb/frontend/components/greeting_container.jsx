@@ -1,7 +1,6 @@
 import { logout } from '../actions/session_actions';
 import { connect } from 'react-redux';
 import Greeting from './greeting';
-import React from 'react';
 
 const msp = state => {
     return {
