@@ -6,8 +6,8 @@ class Greeting extends React.Component {
         {if (this.props.currentUser){
             return (
                 <div>
-                    <h1>Welcome, {currentUser.username}</h1><br></br>
-                    <button>Logout</button>
+                    <h1>Welcome, {this.props.currentUser.username}</h1><br></br>
+                    <button onClick={this.props.logout}>Logout</button>
                 </div>
             )
         }
