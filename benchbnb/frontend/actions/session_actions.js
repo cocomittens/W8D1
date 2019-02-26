@@ -39,5 +39,7 @@ export const signup = user => dispatch => (
     .then(user => dispatch(receiveCurrentUser(user)), errors => dispatch(receiveErrors(errors)))
 );
 
+
+
 window.login = login;
 window.signup = signup; // For testing purposes
